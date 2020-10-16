@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.DetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:id="@+id/detailImage_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailName_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/recipe_name"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailImage_ImageView" />
+
+        <TextView
+            android:id="@+id/detailHeadline_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/headline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailName_TextView" />
+
+        <TextView
+            android:id="@+id/detailHeadlineText_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/this_is_a_headline_text_for_this_recipe"
+            app:layout_constraintStart_toEndOf="@id/detailHeadline_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailName_TextView" />
+
+        <TextView
+            android:id="@+id/detailCal_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/calories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailHeadline_TextView" />
+
+        <TextView
+            android:id="@+id/detailCalNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/kcal"
+            app:layout_constraintStart_toEndOf="@id/detailCal_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailHeadline_TextView" />
+
+        <TextView
+            android:id="@+id/detailFat_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/fats"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailCal_TextView" />
+
+        <TextView
+            android:id="@+id/detailFatNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/fats_no"
+            app:layout_constraintStart_toEndOf="@id/detailFat_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailCal_TextView" />
+
+        <TextView
+            android:id="@+id/detailCarbons_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/carbons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailFat_TextView" />
+
+        <TextView
+            android:id="@+id/detailCarbonsNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/fats_no"
+            app:layout_constraintStart_toEndOf="@id/detailCarbons_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailFat_TextView" />
+
+        <TextView
+            android:id="@+id/detailProteins_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/proteins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailCarbons_TextView" />
+
+        <TextView
+            android:id="@+id/detailProteinsNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/fats_no"
+            app:layout_constraintStart_toEndOf="@id/detailProteins_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailCarbons_TextView" />
+
+        <TextView
+            android:id="@+id/detailDiff_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/difficulty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailProteins_TextView" />
+
+        <TextView
+            android:id="@+id/detailDiffNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/_1"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/detailDiff_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailProteins_TextView" />
+
+        <TextView
+            android:id="@+id/detailTime_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailDiff_TextView" />
+
+        <TextView
+            android:id="@+id/detailTimeNo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/_1"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/detailTime_TextView"
+            app:layout_constraintTop_toBottomOf="@id/detailDiff_TextView" />
+
+        <TextView
+            android:id="@+id/detailDescription_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/details_about_recipe"
+            android:layout_margin="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailTime_TextView"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

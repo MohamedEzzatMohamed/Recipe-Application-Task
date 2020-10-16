@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Recipe Android App</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="calories">Calories:</string>
+    <string name="kcal">kcal 200</string>
+    <string name="fats">Fats:</string>
+    <string name="fats_no">8 g</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="recipes_application">Recipes Application</string>
+    <string name="details_about_recipe">Details about recipe</string>
+    <string name="carbons">Carbons:</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="_1">1</string>
+    <string name="headline">Headline:</string>
+    <string name="this_is_a_headline_text_for_this_recipe">this is a headline text for this recipe</string>
+    <string name="proteins">Proteins:</string>
+    <string name="time">Time:</string>
+    <string name="internet_error">Please chick the Internet</string>
+
+    <string-array name="sort_status">
+        <item>Select a sort method</item>
+        <item>Calories Asc</item>
+        <item>Calories Des</item>
+        <item>Fat Asc</item>
+        <item>Fat Des</item>
+    </string-array>
+</resources>
